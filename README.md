@@ -65,7 +65,7 @@
 | DELETE | `/api/scores`          | Clear all scores          |
 
 ---
- GitHub Actions CI/CD
+** GitHub Actions CI/CD**
  
 Located at: .github/workflows/docker-deploy.yml
 
@@ -74,10 +74,8 @@ Basic pipeline:
 Trigger on push to main
 
 Build Docker image
-
-You can enhance it to auto-deploy to EC2 or push to DockerHub.
-
-Deployment Steps:
+---
+🌐Deployment Steps:
 
 1.Create EC2 Instance (Amazon Linux)
 
