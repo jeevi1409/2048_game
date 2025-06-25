@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>2048</h1>
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="score-label">Score</div>
+                    <div id="current-score">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">Best</div>
+                    <div id="best-score">0</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="game-intro">
+            <p><strong>HOW TO PLAY:</strong> Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one!</p>
+            <button id="restart-btn">New Game</button>
+        </div>
+        
+        <div id="game-container">
+            <div id="grid-container">
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+            </div>
+            <div id="tile-container"></div>
+        </div>
+        
+        <div id="game-message" class="game-message hidden">
+            <div class="message-container">
+                <p id="message-text"></p>
+                <button id="try-again-btn">Try Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Created with ❤️ | Use arrow keys to play</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
