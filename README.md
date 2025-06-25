@@ -48,7 +48,6 @@
 - **Backend**: Node.js, Express.js
 - **DevOps**: Docker, GitHub Actions
 - **Hosting**: AWS EC2 (Amazon Linux)
-- **SSL (optional)**: Self-signed certificates for HTTPS
 
 ---
 
@@ -78,7 +77,7 @@ Build Docker image
 
 ---
 
-🌐Deployment Steps:
+**🌐Deployment Steps:**
 
 1.Create EC2 Instance (Amazon Linux)
 
