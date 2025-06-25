@@ -8,15 +8,25 @@
 ## 📁 Project Structure
 
 2048_game/
+
 ├── public/ # Frontend (HTML, CSS, JS)
+
 │ ├── index.html
+
 │ ├── script.js
+
 │ └── style.css
+
 ├── server.js # Express.js backend API
+
 ├── scores.json # Score database
+
 ├── Dockerfile # For building Docker container
+
 ├── .dockerignore
+
 ├── .gitignore
+
 └── .github/workflows/docker-deploy.yml # GitHub Actions CI/CD
 
 ## 🎯 Features
@@ -56,6 +66,7 @@
 
 ---
  GitHub Actions CI/CD
+ 
 Located at: .github/workflows/docker-deploy.yml
 
 Basic pipeline:
@@ -69,11 +80,17 @@ You can enhance it to auto-deploy to EC2 or push to DockerHub.
 Deployment Steps:
 
 1.Create EC2 Instance (Amazon Linux)
+
 2.Install Docker:
+
 sudo yum update -y
+
 sudo yum install docker -y
+
 sudo service docker start
-Clone repo or copy files
+
 3.Build & run:
+
 docker build -t secure-2048 .
+
 docker run -d -p 80:3000 secure-2048
